@@ -7,3 +7,10 @@ alter 6xc2, resi=int(resi)+3
 ## Renumber the Fab (Chains H and L)
 alter chain L, resi=int(resi)+500
 alter (all), chain='A'
+
+
+## Renumber the RBD 6XC7
+alter 6xc7, resi=int(resi)+3
+
+## Renumber the Fab (Chains C and D)
+alter chain D, resi=int(resi)+500
