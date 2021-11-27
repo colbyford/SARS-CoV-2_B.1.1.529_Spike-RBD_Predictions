@@ -1,0 +1,9 @@
+## Renumber the predicted B.1.1.529 RBD structure
+alter SARSCov2_B11529_Srbd_80403_relaxed_model_1_rank_1, resi=int(resi)+340
+
+## Renumber the RBD 6XC2
+alter 6xc2, resi=int(resi)+3
+
+## Renumber the Fab (Chains H and L)
+alter chain L, resi=int(resi)+500
+alter (all), chain='A'
