@@ -1,5 +1,7 @@
 # Predictions of the SARS-CoV-2 B.1.1.529 Variant Spike Protein Receptor Binding Domain Structure and Neutralizing Antibody Interactions.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5733161.svg)](https://doi.org/10.5281/zenodo.5733161)
+
 <h3 align="right">Colby T. Ford, Ph.D.</h3>
 
 
