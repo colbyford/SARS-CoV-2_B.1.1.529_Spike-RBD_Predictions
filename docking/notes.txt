@@ -31,3 +31,10 @@ alter 6xcm, resi=int(resi)+3
 
 ## Renumber the Fab (Chains N and S)
 alter chain S, resi=int(resi)+500
+
+#################################################
+## Renumber the RBD 6XE1
+alter 6xe1, resi=int(resi)+3
+
+## Renumber the Fab (Chains H and L)
+alter chain L, resi=int(resi)+500
