@@ -1,0 +1,7 @@
+Metric,6XC7 RBD w/ CC12.3,Predicted B.1.1.529 RBD w/ CC12.3,% Difference,,,,,,,,
+Van der Waals energy,-89.5,-85.7,-4%,,,,,,,,
+Electrostatic energy,-253.6,-128.2,-49%,,,,,,,,
+Desolvation energy,-20.1,-39.2,95%,,,,,,,,
+Restraints violation energy,-142.6,-129,-10%,,,,,,,,
+HADDOCK score,-142.6,-129,-10%,,,,,,,,
+Buried Surface Area,2618.6,2533.3,-3%,,,,,,,,
