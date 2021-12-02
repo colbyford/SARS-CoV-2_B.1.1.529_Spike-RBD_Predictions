@@ -1,0 +1,7 @@
+Metric,6XE1 RBD w/ CV30,Predicted B.1.1.529 RBD w/ CV30,% Difference
+Van der Waals energy,-86.1,-61.7,-28%
+Electrostatic energy,-354.4,-171.8,-52%
+Desolvation energy,-13.8,-19.5,41%
+Restraints violation energy,147.6,159.4,8%
+HADDOCK score,-156,-99.6,-36%
+Buried Surface Area,2479,1992.6,-20%
