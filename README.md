@@ -10,6 +10,7 @@ Companion repository for the following articles:
 - Medium posts:
   - [Protein Structure Prediction of the new B.1.1.529 SARS-CoV-2 Spike Variant with AlphaFold2](https://colbyford.medium.com/protein-structure-prediction-of-b-1-1-529-sars-cov-2-spike-variant-with-alphafold2-39c5bf9cf9ed)
   - [Predicted Protein Interactions of the SARS-CoV-2 B.1.1.529 Variant with Neutralizing Antibodies](https://colbyford.medium.com/predicted-protein-interactions-of-the-sars-cov-2-b-1-1-529-variant-with-neutralizing-antibodies-14dad04b3b61)
+- This work was also mentioned in The Economist: https://www.economist.com./briefing/2021/12/04/omicron-looks-ominous-how-bad-is-it-likely-to-be
 
 <p align="middle"><img src="https://github.com/colbyford/SARS-CoV-2_B.1.1.529_Spike-RBD_Predictions/blob/main/img/process_flow.png?raw=true"></p>
 
