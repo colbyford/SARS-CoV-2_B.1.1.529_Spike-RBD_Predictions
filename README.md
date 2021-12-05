@@ -2,11 +2,11 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5733161.svg)](https://doi.org/10.5281/zenodo.5733161)
 
-<h3 align="right">Colby T. Ford, Ph.D., Denis Jacob Machado, Ph.D., and Daniel A. Janies, Ph.D.</h3>
+<h4 align="right">Colby T. Ford, Ph.D., Denis Jacob Machado, Ph.D., and Daniel A. Janies, Ph.D.<br>The University of North Carolina at Charlotte</h4>
 
 
 Companion repository for the following articles:
-- bior&Chi;iv Preprint: [https://www.biorxiv.org/content/10.1101/471024v1](https://www.biorxiv.org/content/10.1101/471024v1)
+- bior&Chi;iv Preprint: [https://www.biorxiv.org/content/10.1101/471024v1](https://www.biorxiv.org/content/10.1101/471024v1) (Coming Soon...)
 - Medium posts:
   - [Protein Structure Prediction of the new B.1.1.529 SARS-CoV-2 Spike Variant with AlphaFold2](https://colbyford.medium.com/protein-structure-prediction-of-b-1-1-529-sars-cov-2-spike-variant-with-alphafold2-39c5bf9cf9ed)
   - [Predicted Protein Interactions of the SARS-CoV-2 B.1.1.529 Variant with Neutralizing Antibodies](https://colbyford.medium.com/predicted-protein-interactions-of-the-sars-cov-2-b-1-1-529-variant-with-neutralizing-antibodies-14dad04b3b61)
