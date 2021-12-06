@@ -38,3 +38,13 @@ alter 6xe1, resi=int(resi)+3
 
 ## Renumber the Fab (Chains H and L)
 alter chain L, resi=int(resi)+500
+
+
+
+#################################################
+## Renumber the RBD 7VX1 (Beta)
+alter 7vx1, resi=int(resi)+3
+
+#################################################
+## Renumber the RBD 7V7O (Delta)
+alter 7v7o, resi=int(resi)+5
