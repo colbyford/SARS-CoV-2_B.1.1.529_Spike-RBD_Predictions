@@ -1,5 +1,10 @@
-## Renumber the predicted B.1.1.529 RBD structure
+## Renumber the predicted AlphaFold2 B.1.1.529 RBD structure
 alter SARSCov2_B11529_Srbd_80403_relaxed_model_1_rank_1, resi=int(resi)+340
+
+#################################################
+## Renumber the RBD RoseTTAFold B.1.1.529 RBD structure
+alter SARSCov2_B11529_Srbd_80403_mmseqs2, resi=int(resi)+340
+
 
 #################################################
 ## Renumber the RBD 6XC2
@@ -40,7 +45,6 @@ alter 6xe1, resi=int(resi)+3
 alter chain L, resi=int(resi)+500
 
 
-
 #################################################
 ## Renumber the RBD 7VX1 (Beta)
 alter 7vx1, resi=int(resi)+3
@@ -48,3 +52,4 @@ alter 7vx1, resi=int(resi)+3
 #################################################
 ## Renumber the RBD 7V7O (Delta)
 alter 7v7o, resi=int(resi)+5
+

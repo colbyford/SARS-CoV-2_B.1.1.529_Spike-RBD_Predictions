@@ -1,7 +1,8 @@
 library(dplyr)
 library(readxl)
 
-data <- read_xlsx("HADDOCK_Results.xlsx")
+data <- read_xlsx("HADDOCK_Results.xlsx") %>% 
+  filter(`Antibody Name` != "CR3022")
 
 # data_ref <- data %>% filter(`Analysis Type` == "Reference")
 # data_pred <- data %>% filter(`Analysis Type` == "Prediction")
