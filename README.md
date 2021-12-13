@@ -14,6 +14,8 @@ Companion repository for the following articles:
 This work was also mentioned in:
 - The Economist: https://www.economist.com./briefing/2021/12/04/omicron-looks-ominous-how-bad-is-it-likely-to-be
 - Syfi Technologies: https://www.sify.com/movies/omicron-may-not-completely-evade-vax-immune-response-us-study-news-bollywood-vmjm5tgabahbj.html
+- News-Medical.net: https://www.news-medical.net/news/20211208/AlphaFold-AI-predicts-SARS-CoV-2-omicron-variant-might-not-evade-antibody-neutralization.aspx
+- Precision Vaccinations: https://www.precisionvaccinations.com/2021/12/07/predicting-sars-cov-2-omicron-variant-impact-ai
 
 <p align="middle"><img src="https://github.com/colbyford/SARS-CoV-2_B.1.1.529_Spike-RBD_Predictions/blob/main/img/process_flow.png?raw=true"></p>
 
