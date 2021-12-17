@@ -14,6 +14,10 @@ Companion repository for the following articles:
 
 <p align="middle"><img src="https://github.com/colbyford/SARS-CoV-2_B.1.1.529_Spike-RBD_Predictions/blob/main/img/process_flow.png?raw=true"></p>
 
+
+## YouTube Video:
+[![](https://img.youtube.com/vi/PY78_F0Odfg/0.jpg)](https://www.youtube.com/watch?v=PY78_F0Odfg)
+
 This work was also mentioned in:
 - The Economist: https://www.economist.com./briefing/2021/12/04/omicron-looks-ominous-how-bad-is-it-likely-to-be
 - Syfi Technologies: https://www.sify.com/movies/omicron-may-not-completely-evade-vax-immune-response-us-study-news-bollywood-vmjm5tgabahbj.html
