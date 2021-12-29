@@ -53,3 +53,7 @@ alter 7vx1, resi=int(resi)+3
 ## Renumber the RBD 7V7O (Delta)
 alter 7v7o, resi=int(resi)+5
 
+
+#################################################
+## Renumber the RBD 7T9J (Omicron)
+alter 7t9j, resi=int(resi)+3
