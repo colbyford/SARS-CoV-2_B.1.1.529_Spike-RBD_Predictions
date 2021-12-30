@@ -34,6 +34,7 @@ Omicron (B.1.1.529) Info:
 Receptor Binding Domain Structure:
 - AlphaFold2 Code: [AlphaFold2.ipynb](AlphaFold2.ipynb)
 - Predicted B.1.1.529 Spike receptor binding domain PDB structure: [SARSCov2_B11529_Srbd_80403_relaxed_model_1_rank_1.pdb](AlphaFold2_prediction/SARSCov2_B11529_Srbd_80403_relaxed_model_1_rank_1.pdb)
+- Actual Cryo-EM Structure from Mannar et al. 2021: https://www.rcsb.org/structure/7T9J
 
 ### Protein Interactions:
 
