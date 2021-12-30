@@ -1,8 +1,8 @@
-Metric,6XCM RBD w/ C105,AlphaFold Predicted B.1.1.529 RBD w/ C105,% Difference,RoseTTAFold Predicted B.1.1.529 RBD w/ C105,% Difference, Predicted B.1.1.529 RBD w/ C105,
-,,,,,,AlphaFold,RoseTTAFold
-Van der Waals energy,-85,-71.8,-16%,-44.2,-48%,-71.8 (-0.16),-44.2 (-0.48)
-Electrostatic energy,-280.9,-268.9,-4%,-324.5,16%,-268.9 (-0.04),-324.5 (0.155215379138484)
-Desolvation energy,-18.6,-17.1,-8%,-3.2,-83%,-17.1 (-0.08),-3.2 (-0.827956989247312)
-Restraints violation energy,154.1,158.8,3%,338.6,120%,158.8 (0.03),338.6 (1.19727449707982)
-HADDOCK score,-144.4,-126.8,-12%,-78.4,-46%,-126.8 (-0.12),-78.4 (-0.457063711911357)
-Buried Surface Area,2417.8,2299.6,-5%,1555.1,-36%,2299.6 (-0.05),1555.1 (-0.356811977831086)
+Metric,6XCM RBD w/ C105,AlphaFold Predicted B.1.1.529 RBD w/ C105,% Difference,RoseTTAFold Predicted B.1.1.529 RBD w/ C105,% Difference,7T9J RBD w/ C105,% Difference, Predicted B.1.1.529 RBD w/ C105,
+,,,,,,,,AlphaFold2,RoseTTAFold
+Van der Waals energy,-85,-71.8,-16%,-44.2,-48%,-67.0,-21%,-71.8 (-0.16),-44.2 (-0.48)
+Electrostatic energy,-280.9,-268.9,-4%,-324.5,16%,-271.0,-4%,-268.9 (-0.04),-324.5 (0.155215379138484)
+Desolvation energy,-18.6,-17.1,-8%,-3.2,-83%,-17.2,-8%,-17.1 (-0.08),-3.2 (-0.827956989247312)
+Restraints violation energy,154.1,158.8,3%,338.6,120%,183.8,19%,158.8 (0.03),338.6 (1.19727449707982)
+HADDOCK score,-144.4,-126.8,-12%,-78.4,-46%,-120.0,-17%,-126.8 (-0.12),-78.4 (-0.457063711911357)
+Buried Surface Area,2417.8,2299.6,-5%,1555.1,-36%,1979.8,-18%,2299.6 (-0.05),1555.1 (-0.356811977831086)
