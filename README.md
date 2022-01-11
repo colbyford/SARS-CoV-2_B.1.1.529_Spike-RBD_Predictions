@@ -19,6 +19,7 @@ Companion repository for the following articles:
 [![](https://img.youtube.com/vi/PY78_F0Odfg/0.jpg)](https://www.youtube.com/watch?v=PY78_F0Odfg)
 
 This work was also mentioned in:
+- WIRED: https://www.wired.com/story/ai-software-nearly-predicted-omicrons-tricky-structure/
 - The Economist: https://www.economist.com./briefing/2021/12/04/omicron-looks-ominous-how-bad-is-it-likely-to-be
 - Syfi Technologies: https://www.sify.com/movies/omicron-may-not-completely-evade-vax-immune-response-us-study-news-bollywood-vmjm5tgabahbj.html
 - Medical News: https://www.news-medical.net/news/20211208/AlphaFold-AI-predicts-SARS-CoV-2-omicron-variant-might-not-evade-antibody-neutralization.aspx
