@@ -1,0 +1,21 @@
+{
+    "num_queries": 1,
+    "use_templates": false,
+    "use_amber": true,
+    "msa_mode": "MMseqs2 (UniRef+Environmental)",
+    "model_type": "AlphaFold2-ptm",
+    "num_models": 1,
+    "num_recycles": 3,
+    "model_order": [
+        1
+    ],
+    "keep_existing_results": false,
+    "rank_by": "plddt",
+    "pair_mode": "unpaired+paired",
+    "host_url": "https://a3m.mmseqs.com",
+    "stop_at_score": 95.0,
+    "recompile_padding": 1.0,
+    "recompile_all_models": false,
+    "commit": "3cb3e2f00e42f7ebe7ebf9eb1e1d0aa5a8864cf5",
+    "version": "1.2.0"
+}
