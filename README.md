@@ -18,6 +18,7 @@ Companion repository for the following articles:
 ## YouTube Video:
 [![](https://img.youtube.com/vi/PY78_F0Odfg/0.jpg)](https://www.youtube.com/watch?v=PY78_F0Odfg)
 
+## Media:
 This work was also mentioned in:
 - WIRED: https://www.wired.com/story/ai-software-nearly-predicted-omicrons-tricky-structure/
 - The Economist: https://www.economist.com./briefing/2021/12/04/omicron-looks-ominous-how-bad-is-it-likely-to-be
