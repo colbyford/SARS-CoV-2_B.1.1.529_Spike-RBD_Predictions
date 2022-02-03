@@ -26,6 +26,10 @@ This work was also mentioned in:
 - Medical News: https://www.news-medical.net/news/20211208/AlphaFold-AI-predicts-SARS-CoV-2-omicron-variant-might-not-evade-antibody-neutralization.aspx
 - Precision Vaccinations: https://www.precisionvaccinations.com/2021/12/07/predicting-sars-cov-2-omicron-variant-impact-ai
 - The Print: https://theprint.in/health/omicron-unlikely-to-completely-evade-antibodies-us-study-using-ai-tool-suggests/778403/
+- ChemDiv: https://www.chemdiv.com/company/media/pharma-news/2022/free-ai-protein-software-packages-nearly-predicted-structure-of-the-omicron-coronavirus-variant-corr/
+- Fortune: https://fortune.com/2022/01/12/biontech-instadeep-ai-early-warning-covid-19-variants-of-concern-omicron-delta/
+- Latest Game Storage: https://latestgamestories.com/2022/01/10/this-ai-has-almost-exactly-detailed-the-structure-and-operation-of-omicron/
+- SiaSat: https://www.siasat.com/omicron-may-not-completely-evade-vax-immune-response-us-study-2238739/
 
 
 ## Resources:
