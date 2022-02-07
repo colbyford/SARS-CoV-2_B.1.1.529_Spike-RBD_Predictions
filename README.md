@@ -1,6 +1,6 @@
 # Predictions of the SARS-CoV-2 Omicron (B.1.1.529) Variant Spike Protein Receptor Binding Domain Structure and Neutralizing Antibody Interactions.
 
-[![DOI](https://zenodo.org/badge/DOI/10.1101/2021.12.03.471024.svg)](https://www.biorxiv.org/content/10.1101/2021.12.03.471024)
+[![DOI](https://zenodo.org/badge/DOI/10.3389/fviro.2022.830202.svg)](https://www.frontiersin.org/articles/10.3389/fviro.2022.830202)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5733161.svg)](https://doi.org/10.5281/zenodo.5733161)
 
 <h4 align="right">Colby T. Ford, Ph.D., Denis Jacob Machado, Ph.D., and Daniel A. Janies, Ph.D.<br>The University of North Carolina at Charlotte</h4>
