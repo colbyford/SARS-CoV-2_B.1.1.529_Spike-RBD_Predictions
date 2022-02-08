@@ -58,5 +58,4 @@ RoseTTAFold Omicron Structure Docking:
 - Predicted interaction PDB for B.1.1.529 with CV30 antibody: [6xe1_Fab_RFpred_docking_cluster1_1.pdb](docking/CV30/6xe1_Fab_RFpred_docking_cluster1_1.pdb)
 
 
-
 <p align="middle"><img src="https://github.com/colbyford/SARS-CoV-2_B.1.1.529_Spike-RBD_Predictions/blob/main/comparison/6xc2_vs_B11529pred_white.png?raw=true" width = "600px"></p>
