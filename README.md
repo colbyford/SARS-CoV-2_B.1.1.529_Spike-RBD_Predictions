@@ -37,7 +37,6 @@ This work was also mentioned in:
 Omicron (B.1.1.529) Info:
 - B.1.1.529 Sequence (from GISAID) and Wuhan Reference Sequence: [/sequences](/sequences)
 - List of B.1.1.529 Spike mutations: [B.1.1.528_Spike_Mutations.xlsx](B.1.1.528_Spike_Mutations.xlsx)
-- 
 
 Receptor Binding Domain Structure:
 - AlphaFold2 Code: [AlphaFold2.ipynb](AlphaFold2.ipynb)
@@ -60,3 +59,7 @@ RoseTTAFold Omicron Structure Docking:
 
 
 <p align="middle"><img src="https://github.com/colbyford/SARS-CoV-2_B.1.1.529_Spike-RBD_Predictions/blob/main/comparison/6xc2_vs_B11529pred_white.png?raw=true" width = "600px"></p>
+
+### Subvariants
+- BA.1: [subvariants/BA.1](subvariants/BA.1)
+- BA.2: [subvariants/BA.1](subvariants/BA.2)
