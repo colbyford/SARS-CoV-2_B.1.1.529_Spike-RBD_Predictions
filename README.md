@@ -23,12 +23,12 @@ Companion repository for the following articles:
 This work was also mentioned in:
 - WIRED: https://www.wired.com/story/ai-software-nearly-predicted-omicrons-tricky-structure/
 - The Economist: https://www.economist.com./briefing/2021/12/04/omicron-looks-ominous-how-bad-is-it-likely-to-be
+- Fortune: https://fortune.com/2022/01/12/biontech-instadeep-ai-early-warning-covid-19-variants-of-concern-omicron-delta/
 - Syfi Technologies: https://www.sify.com/movies/omicron-may-not-completely-evade-vax-immune-response-us-study-news-bollywood-vmjm5tgabahbj.html
 - Medical News: https://www.news-medical.net/news/20211208/AlphaFold-AI-predicts-SARS-CoV-2-omicron-variant-might-not-evade-antibody-neutralization.aspx
 - Precision Vaccinations: https://www.precisionvaccinations.com/2021/12/07/predicting-sars-cov-2-omicron-variant-impact-ai
 - The Print: https://theprint.in/health/omicron-unlikely-to-completely-evade-antibodies-us-study-using-ai-tool-suggests/778403/
 - ChemDiv: https://www.chemdiv.com/company/media/pharma-news/2022/free-ai-protein-software-packages-nearly-predicted-structure-of-the-omicron-coronavirus-variant-corr/
-- Fortune: https://fortune.com/2022/01/12/biontech-instadeep-ai-early-warning-covid-19-variants-of-concern-omicron-delta/
 - Latest Game Storage: https://latestgamestories.com/2022/01/10/this-ai-has-almost-exactly-detailed-the-structure-and-operation-of-omicron/
 - SiaSat: https://www.siasat.com/omicron-may-not-completely-evade-vax-immune-response-us-study-2238739/
 
@@ -62,4 +62,4 @@ RoseTTAFold Omicron Structure Docking:
 
 ### Subvariants
 - BA.1: [subvariants/BA.1](subvariants/BA.1)
-- BA.2: [subvariants/BA.1](subvariants/BA.2)
+- BA.2: [subvariants/BA.2](subvariants/BA.2)
