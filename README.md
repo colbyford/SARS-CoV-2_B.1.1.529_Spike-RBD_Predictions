@@ -64,3 +64,5 @@ RoseTTAFold Omicron Structure Docking:
 ### Subvariants
 - BA.1: [subvariants/BA.1](subvariants/BA.1)
 - BA.2: [subvariants/BA.2](subvariants/BA.2)
+- BA.2.75: [subvariants/BA.2.75](subvariants/BA.2.75)
+- BA.5: [subvariants/BA.5](subvariants/BA.5)
