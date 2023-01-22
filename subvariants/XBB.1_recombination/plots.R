@@ -10,7 +10,7 @@ data <- read_excel("HADDOCK_Results.xlsx")
 # wilcox.test((data %>% filter(`Spike RBD` == "BJ.1"))$`HADDOCK score`,
 #             (data %>% filter(`Spike RBD` == "XBB.1.5"))$`HADDOCK score`)
 
-
+## Define Variant Comparisons
 variant_comparisons <- list(
   c("BJ.1", "BM.1.1.1"),
   c("BJ.1", "XBB.1.5"),
