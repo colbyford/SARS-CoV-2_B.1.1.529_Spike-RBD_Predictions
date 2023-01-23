@@ -11,12 +11,13 @@ data <- read_excel("HADDOCK_Results.xlsx")
 #             (data %>% filter(`Spike RBD` == "XBB.1.5"))$`HADDOCK score`)
 
 ## Define Variant Comparisons
-variant_comparisons <- list(
-  c("BJ.1", "BM.1.1.1"),
-  c("BJ.1", "XBB.1.5"),
-  c("BM.1.1.1", "XBB.1.5")
-  )
+# variant_comparisons <- list(
+#   c("BJ.1", "BM.1.1.1"),
+#   c("BJ.1", "XBB.1.5"),
+#   c("BM.1.1.1", "XBB.1.5")
+#   )
 
+variant_comparisons <- combn(c("BJ.1", "BM.1.1.1", "XBB.1.5"), 2, simplify = FALSE)
 
 ## HADDOCK Score
 ggboxplot(data, x = "Spike RBD",
