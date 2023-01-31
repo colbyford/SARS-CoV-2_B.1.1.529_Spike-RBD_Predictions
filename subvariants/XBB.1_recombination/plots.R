@@ -5,7 +5,8 @@ library(readxl)
 library(ggplot2)
 library(ggpubr)
 
-data <- read_excel("HADDOCK_Results.xlsx", sheet = "Results")
+data <- read_excel("HADDOCK_Results.xlsx", sheet = "Results") %>% 
+  filter(`Antibody Name` != 'Omi-9')
 
 # wilcox.test((data %>% filter(`Spike RBD` == "BJ.1"))$`HADDOCK score`,
 #             (data %>% filter(`Spike RBD` == "XBB.1.5"))$`HADDOCK score`)
