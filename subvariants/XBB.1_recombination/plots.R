@@ -33,6 +33,7 @@ variant_comparisons <- combn(c("B.1.1.529", "BJ.1", "BM.1.1.1", "XBB.1.5"), 2, s
 ## HADDOCK Score
 had_plot <- ggboxplot(data, x = "Spike RBD",
           y = "HADDOCK score",
+          xlab = "",
           color = "Spike RBD",
           palette = "jco",
           add = "dotplot") + 
@@ -42,6 +43,7 @@ had_plot <- ggboxplot(data, x = "Spike RBD",
 ## Van der Waals Energy
 vdw_plot <- ggboxplot(data, x = "Spike RBD",
           y = "Van der Waals energy",
+          xlab = "",
           color = "Spike RBD",
           palette = "jco",
           add = "dotplot") + 
@@ -51,6 +53,7 @@ vdw_plot <- ggboxplot(data, x = "Spike RBD",
 ## Electrostatic Energy
 ee_plot <- ggboxplot(data, x = "Spike RBD",
           y = "Electrostatic energy",
+          xlab = "",
           color = "Spike RBD",
           palette = "jco",
           add = "dotplot") + 
@@ -59,6 +62,7 @@ ee_plot <- ggboxplot(data, x = "Spike RBD",
 ## Desolvation Energy
 de_plot <- ggboxplot(data, x = "Spike RBD",
                      y = "Desolvation energy",
+                     xlab = "",
                      color = "Spike RBD",
                      palette = "jco",
                      add = "dotplot") + 
@@ -76,6 +80,7 @@ de_plot <- ggboxplot(data, x = "Spike RBD",
 poa_plot <- ggboxplot(data, x = "Spike RBD",
                       y = "Predicted Octet Affinity",
                       ylab = "Predicted Octet Affinity\nlog(kD/nM)",
+                      xlab = "",
                       color = "Spike RBD",
                       palette = "jco",
                       add = "dotplot") + 
@@ -84,6 +89,7 @@ poa_plot <- ggboxplot(data, x = "Spike RBD",
 ## Buried Surface Area
 bsa_plot <- ggboxplot(data, x = "Spike RBD",
                      y = "Buried Surface Area",
+                     xlab = "",
                      color = "Spike RBD",
                      palette = "jco",
                      add = "dotplot") + 
