@@ -18,6 +18,9 @@ moctet_model <- readRDS("moctet_model.RDS")
 
 data$`Predicted Octet Affinity` <- predict(moctet_model, data)
 
+####################
+## Box Plots
+
 # wilcox.test((data %>% filter(`Spike RBD` == "BJ.1"))$`HADDOCK score`,
 #             (data %>% filter(`Spike RBD` == "XBB.1.5"))$`HADDOCK score`)
 
@@ -31,7 +34,7 @@ data$`Predicted Octet Affinity` <- predict(moctet_model, data)
 variant_comparisons <- combn(c("B.1.1.529", "BJ.1", "BM.1.1.1", "XBB.1.5"), 2, simplify = FALSE)
 
 ## HADDOCK Score
-had_plot <- ggboxplot(data, x = "Spike RBD",
+had_boxplot <- ggboxplot(data, x = "Spike RBD",
           y = "HADDOCK score",
           xlab = "",
           color = "Spike RBD",
@@ -41,7 +44,7 @@ had_plot <- ggboxplot(data, x = "Spike RBD",
 
 
 ## Van der Waals Energy
-vdw_plot <- ggboxplot(data, x = "Spike RBD",
+vdw_boxplot <- ggboxplot(data, x = "Spike RBD",
           y = "Van der Waals energy",
           xlab = "",
           color = "Spike RBD",
@@ -51,7 +54,7 @@ vdw_plot <- ggboxplot(data, x = "Spike RBD",
 
 
 ## Electrostatic Energy
-ee_plot <- ggboxplot(data, x = "Spike RBD",
+ee_boxplot <- ggboxplot(data, x = "Spike RBD",
           y = "Electrostatic energy",
           xlab = "",
           color = "Spike RBD",
@@ -60,7 +63,7 @@ ee_plot <- ggboxplot(data, x = "Spike RBD",
   stat_compare_means(method = "wilcox.test", comparisons = variant_comparisons)
 
 ## Desolvation Energy
-de_plot <- ggboxplot(data, x = "Spike RBD",
+de_boxplot <- ggboxplot(data, x = "Spike RBD",
                      y = "Desolvation energy",
                      xlab = "",
                      color = "Spike RBD",
@@ -69,7 +72,7 @@ de_plot <- ggboxplot(data, x = "Spike RBD",
   stat_compare_means(method = "wilcox.test", comparisons = variant_comparisons)
 
 ## Restraints Violation Energy
-# rve_plot <- ggboxplot(data, x = "Spike RBD",
+# rve_boxplot <- ggboxplot(data, x = "Spike RBD",
 #                      y = "Restraints violation energy",
 #                      color = "Spike RBD",
 #                      palette = "jco",
@@ -77,7 +80,7 @@ de_plot <- ggboxplot(data, x = "Spike RBD",
 #   stat_compare_means(method = "wilcox.test", comparisons = variant_comparisons)
 
 ## Predicted Octet Affinity
-poa_plot <- ggboxplot(data, x = "Spike RBD",
+poa_boxplot <- ggboxplot(data, x = "Spike RBD",
                       y = "Predicted Octet Affinity",
                       ylab = "Predicted Octet Affinity\nlog(kD/nM)",
                       xlab = "",
@@ -87,7 +90,7 @@ poa_plot <- ggboxplot(data, x = "Spike RBD",
   stat_compare_means(method = "wilcox.test", comparisons = variant_comparisons)
 
 ## Buried Surface Area
-bsa_plot <- ggboxplot(data, x = "Spike RBD",
+bsa_boxplot <- ggboxplot(data, x = "Spike RBD",
                      y = "Buried Surface Area",
                      xlab = "",
                      color = "Spike RBD",
@@ -95,7 +98,7 @@ bsa_plot <- ggboxplot(data, x = "Spike RBD",
                      add = "dotplot") + 
   stat_compare_means(method = "wilcox.test", comparisons = variant_comparisons)
 
-figure <- ggarrange(had_plot, vdw_plot, ee_plot, de_plot, poa_plot, bsa_plot,
+boxplot_figure <- ggarrange(had_boxplot, vdw_boxplot, ee_boxplot, de_boxplot, poa_boxplot, bsa_boxplot,
                     # labels = c("HADDOCK Score",
                     #            "van der Waals Energy",
                     #            "Electrostatic Energy",
@@ -107,4 +110,10 @@ figure <- ggarrange(had_plot, vdw_plot, ee_plot, de_plot, poa_plot, bsa_plot,
                     common.legend = TRUE,
                     legend = "bottom")
 
-figure
+boxplot_figure
+
+
+
+
+
+
