@@ -113,7 +113,58 @@ boxplot_figure <- ggarrange(had_boxplot, vdw_boxplot, ee_boxplot, de_boxplot, po
 boxplot_figure
 
 
+###############
+
+## UMAP
+library(umap)
+
+umap_fit <- data %>%
+  select(`HADDOCK Job Name`,
+         `Van der Waals energy`,
+         `HADDOCK score`,
+         `Electrostatic energy`,
+         `Desolvation energy`,
+         # `Restraints violation energy`,
+         `Buried Surface Area`,
+         `Predicted Octet Affinity`) %>%
+  tibble::column_to_rownames("HADDOCK Job Name") %>%
+  scale() %>% 
+  umap()
 
 
+umap_df <- umap_fit$layout %>%
+  as.data.frame()%>%
+  rename(UMAP1="V1",
+         UMAP2="V2") %>%
+  tibble::rownames_to_column(var = "HADDOCK Job Name") %>% 
+  inner_join(data, by="HADDOCK Job Name")
 
 
+umap_df %>%
+  ggplot(aes(
+    # x = UMAP1,
+    # y = UMAP2,
+    x = `HADDOCK score`,
+    y = `Predicted Octet Affinity`,
+             color = `Spike RBD`,
+             shape = `Spike RBD`)) +
+  geom_point(size=3, alpha=0.5) +
+  facet_wrap(~`Antibody Name`) +
+  # labs(x = "UMAP1",
+  #      y = "UMAP2",
+  #      subtitle = "UMAP plot") +
+  theme(legend.position="bottom")
+
+## HADDOCK vs. Octet Scatter
+
+ggplot(data,
+  aes(x = `HADDOCK score`,
+      y = `Predicted Octet Affinity`,
+      color = `Spike RBD`,
+      shape = `Spike RBD`)) +
+  geom_point(size=3, alpha=0.9) +
+  facet_wrap(~`Antibody Name`,
+             nrow = 5,
+             ncol = 2) +
+  theme_pubr()
+  
