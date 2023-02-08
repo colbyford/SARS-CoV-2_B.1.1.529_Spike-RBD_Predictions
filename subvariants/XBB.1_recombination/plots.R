@@ -14,7 +14,7 @@ data <- read_excel("HADDOCK_Results.xlsx", sheet = "Results") %>%
          restraints_violation_energy = `Restraints violation energy`,
          buried_surface_area = `Buried Surface Area`)
 
-moctet_model <- readRDS("moctet_model.RDS")
+moctet_model <- readRDS("../../../moctet_affinity_model/moctet_model.RDS")
 
 data$`Predicted Octet Affinity` <- predict(moctet_model, data)
 
@@ -38,7 +38,8 @@ had_boxplot <- ggboxplot(data, x = "Spike RBD",
           y = "HADDOCK score",
           xlab = "",
           color = "Spike RBD",
-          palette = "jco",
+          # palette = "jco",
+          palette = get_palette("Dark2", 4),
           add = "dotplot") + 
   stat_compare_means(method = "wilcox.test", comparisons = variant_comparisons)
 
@@ -48,7 +49,8 @@ vdw_boxplot <- ggboxplot(data, x = "Spike RBD",
           y = "Van der Waals energy",
           xlab = "",
           color = "Spike RBD",
-          palette = "jco",
+          # palette = "jco",
+          palette = get_palette("Dark2", 4),
           add = "dotplot") + 
   stat_compare_means(method = "wilcox.test", comparisons = variant_comparisons)
 
@@ -58,7 +60,8 @@ ee_boxplot <- ggboxplot(data, x = "Spike RBD",
           y = "Electrostatic energy",
           xlab = "",
           color = "Spike RBD",
-          palette = "jco",
+          # palette = "jco",
+          palette = get_palette("Dark2", 4),
           add = "dotplot") + 
   stat_compare_means(method = "wilcox.test", comparisons = variant_comparisons)
 
@@ -67,7 +70,8 @@ de_boxplot <- ggboxplot(data, x = "Spike RBD",
                      y = "Desolvation energy",
                      xlab = "",
                      color = "Spike RBD",
-                     palette = "jco",
+                     # palette = "jco",
+                     palette = get_palette("Dark2", 4),
                      add = "dotplot") + 
   stat_compare_means(method = "wilcox.test", comparisons = variant_comparisons)
 
@@ -85,7 +89,8 @@ poa_boxplot <- ggboxplot(data, x = "Spike RBD",
                       ylab = "Predicted Octet Affinity\nlog(kD/nM)",
                       xlab = "",
                       color = "Spike RBD",
-                      palette = "jco",
+                      # palette = "jco",
+                      palette = get_palette("Dark2", 4),
                       add = "dotplot") + 
   stat_compare_means(method = "wilcox.test", comparisons = variant_comparisons)
 
@@ -94,7 +99,8 @@ bsa_boxplot <- ggboxplot(data, x = "Spike RBD",
                      y = "Buried Surface Area",
                      xlab = "",
                      color = "Spike RBD",
-                     palette = "jco",
+                     # palette = "jco",
+                     palette = get_palette("Dark2", 4),
                      add = "dotplot") + 
   stat_compare_means(method = "wilcox.test", comparisons = variant_comparisons)
 
@@ -142,29 +148,17 @@ umap_df <- umap_fit$layout %>%
 
 umap_df %>%
   ggplot(aes(
-    # x = UMAP1,
-    # y = UMAP2,
-    x = `HADDOCK score`,
-    y = `Predicted Octet Affinity`,
-             color = `Spike RBD`,
+    x = UMAP1,
+    y = UMAP2,
+    # x = `HADDOCK score`,
+    # y = `Predicted Octet Affinity`,
+             color = `Antibody Name`,
              shape = `Spike RBD`)) +
-  geom_point(size=3, alpha=0.5) +
-  facet_wrap(~`Antibody Name`) +
-  # labs(x = "UMAP1",
-  #      y = "UMAP2",
-  #      subtitle = "UMAP plot") +
-  theme(legend.position="bottom")
-
-## HADDOCK vs. Octet Scatter
-
-ggplot(data,
-  aes(x = `HADDOCK score`,
-      y = `Predicted Octet Affinity`,
-      color = `Spike RBD`,
-      shape = `Spike RBD`)) +
-  geom_point(size=3, alpha=0.9) +
-  facet_wrap(~`Antibody Name`,
-             nrow = 5,
-             ncol = 2) +
-  theme_pubr()
+  # geom_point(size=3, alpha=0.5) +
+  geom_label(
+    label=umap_df$`Antibody Name`
+  ) +
+  facet_wrap(~`Spike RBD`) +
+  theme_pubr() +
+  theme(legend.position = "none")
   
