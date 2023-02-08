@@ -1,4 +1,5 @@
 library(tidyverse)
+library(stringdist)
 library(seqinr)
 library(GISAIDR)
 # devtools::install_github("Wytamma/GISAIDR")
@@ -29,12 +30,16 @@ bj_1_aa <- bj_1_df %>%
     aa_3 = paste(aa_3_c, collapse=""),
     aa_1_match = str_detect(aa_1, bj_1_RBD_aa),
     aa_2_match = str_detect(aa_2, bj_1_RBD_aa),
-    aa_3_match = str_detect(aa_3, bj_1_RBD_aa)
+    aa_3_match = str_detect(aa_3, bj_1_RBD_aa),
+    aa_1_dist = (nchar(aa_1) - stringdist(aa_1, bj_1_RBD_aa, method='lcs')) / nchar(bj_1_RBD_aa),
+    aa_2_dist = (nchar(aa_2) - stringdist(aa_2, bj_1_RBD_aa, method='lcs')) / nchar(bj_1_RBD_aa),
+    aa_3_dist = (nchar(aa_3) - stringdist(aa_3, bj_1_RBD_aa, method='lcs')) / nchar(bj_1_RBD_aa)
   ) %>% 
-  filter(aa_1_match | aa_2_match | aa_3_match) %>%
+  # filter(aa_1_match | aa_2_match | aa_3_match) %>%
   select(accession_id,
          # aa_1, aa_2, aa_3,
-         aa_1_match, aa_2_match, aa_3_match)
+         aa_1_match, aa_2_match, aa_3_match,
+         aa_1_dist, aa_2_dist, aa_3_dist)
 
 ##############
 ## BM.1.1.1
@@ -59,12 +64,13 @@ bm_1_1_1_aa <- bm_1_1_1_df %>%
     aa_3 = paste(aa_3_c, collapse=""),
     aa_1_match = str_detect(aa_1, bm_1_1_1_RBD_aa),
     aa_2_match = str_detect(aa_2, bm_1_1_1_RBD_aa),
-    aa_3_match = str_detect(aa_3, bm_1_1_1_RBD_aa)
+    aa_3_match = str_detect(aa_3, bm_1_1_1_RBD_aa),
+    aa_1_dist = stringdist(aa_1, bm_1_1_1_RBD_aa, method='lcs')/nchar(bm_1_1_1_RBD_aa)
   ) %>% 
-  filter(aa_1_match | aa_2_match | aa_3_match) %>%
+  # filter(aa_1_match | aa_2_match | aa_3_match) %>%
   select(accession_id,
          # aa_1, aa_2, aa_3,
-         aa_1_match, aa_2_match, aa_3_match)
+         aa_1_match, aa_2_match, aa_3_match, aa_1_dist)
 
 
 ##############
