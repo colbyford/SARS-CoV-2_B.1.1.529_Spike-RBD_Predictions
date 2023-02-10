@@ -112,7 +112,8 @@ boxplot_figure <- ggarrange(had_boxplot, vdw_boxplot, ee_boxplot, de_boxplot, po
                     #            "Restraints Violation Energy",
                     #            "Buried Surface Area"),
                     labels = c("A", "B", "C", "D", "E", "F"),
-                    ncol = 3, nrow = 2,
+                    # ncol = 3, nrow = 2,
+                    ncol = 2, nrow = 3,
                     common.legend = TRUE,
                     legend = "bottom")
 
